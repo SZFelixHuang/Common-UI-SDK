@@ -1,0 +1,52 @@
+<div #cuiFileContainer class="cui-file">
+  <div class="cui-file-caption">
+    <div>Upload queue</div>
+    <div>
+      <span>Queue length: 0</span>
+      <button #cuiFile class="btn btn-link" type="button"><i class="glyphicon glyphicon-plus"></i>Select files</button>
+    </div>
+  </div>
+  <div #previewContainer class="container-fluid cui-file-container">
+      <div class="row head">
+         <div class="col-lg-4">Name</div>
+         <div class="col-lg-1">Size</div>
+         <div class="col-lg-3">Progress</div>
+         <div class="col-lg-1">Status</div>
+         <div class="col-lg-3">Actions</div>
+      </div>
+      <div class="row head-progress">
+        <div class="col-lg-12">
+            <span class="fileupload-process">
+              <div #totalProgress class="progress progress-striped active cui-total-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress=""></div>
+              </div>
+            </span>
+        </div>
+      </div>
+  </div>
+  <div class="cui-file-foot">
+    <button class="btn btn-primary" type="button" (click)="uploadAllDocs($event);"><i class="fa fa-upload"></i>Upload All</button>
+    <button class="btn btn-warning" type="button" (click)="cancelAllDocs($event)"><i class="glyphicon glyphicon-ban-circle"></i>Cancel All</button>
+    <button class="btn btn-danger" type="button" (click)="removeAllDocs($event)"><i class="fa fa-trash-o"></i>Remove All</button>
+  </div>
+</div>
+
+<div #dropzoneItemTemplate style="display: none;">
+  <div class="row">
+    <div class="col-lg-4"><span data-dz-name></span></div>
+    <div class="col-lg-1"><span data-dz-size></span></div>
+    <div class="col-lg-3">
+      <div class="progress">
+        <div class="progress-bar progress-bar-primary" role="progressbar" data-dz-uploadprogress>
+            <span class="progress-text"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"><span data-dz-status></span></div>
+    <div class="col-lg-3">
+      <button class="btn btn-primary uploadBtn" type="button"><i class="fa fa-upload"></i>Upload</button>
+      <button class="btn btn-warning cancelBtn" type="button"><i class="glyphicon glyphicon-ban-circle"></i>Cancel</button>
+      <button class="btn btn-danger removeBtn" type="button"><i class="fa fa-trash-o"></i>Remove</button>
+    </div>
+  </div>
+</div>

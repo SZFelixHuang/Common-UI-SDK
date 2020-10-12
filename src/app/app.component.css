@@ -1,0 +1,30 @@
+div.navigation-menus {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  overflow-y: auto;
+  background-color: #064963;
+}
+div.navigation-menus > div.title {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+}
+div.navigation-menus > div.menu {
+  vertical-align: middle;
+  padding: 10px;
+}
+div.navigation-menus > div.menu > a {
+  color: #fff;
+  font-size: 20px;
+}
+div.content {
+  position: fixed;
+  height: 100%;
+  width: calc(100% - 300px);
+  overflow-y: auto;
+  left: 300px;
+  background-color: #e6e4e4;
+  padding: 10px;
+}

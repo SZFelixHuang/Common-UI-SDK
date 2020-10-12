@@ -1,0 +1,46 @@
+<div style="margin: 10px 0px">
+    <div style="color: red">Default</div>
+    <cui-datepicker></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">format attribute[format="yyyy-mm-dd"]</div>
+    <cui-datepicker format="yyyy-mm-dd"></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">clearBtn attribute[clearBtn=false]</div>
+    <cui-datepicker [clearBtn]=false></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">todayBtn attribute[todayBtn=false]</div>
+    <cui-datepicker [todayBtn]=false></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">startDate attribute[startDate=2020-3-1]</div>
+    <div style="color: red">Note: startDate format must be keop the same with format attribute otherwise it doesn't work.</div>
+    <cui-datepicker startDate="2020-3-1" format="yyyy-mm-dd"></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">endDate attribute[endDate=2020-3-31]</div>
+    <div style="color: red">Note: endDate format must be keop the same with format attribute otherwise it doesn't work.</div>
+    <cui-datepicker endDate="2020-3-31" format="yyyy-mm-dd"></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">startView attribute[
+    Accepts: 0 or “days” or “month”, 1 or “months” or “year”, 2 or “years” or “decade”, 3 or “decades” or “century”, and 4 or “centuries” or “millenium”.    
+    ]</div>
+    <cui-datepicker startView='year'></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">maxViewMode/minViewMode attributes[
+            maxViewMode = 'years' & minViewMode = 'years' & format="yyyy"
+    ]</div>
+    <cui-datepicker maxViewMode='years' minViewMode='years' format="yyyy"></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">value attributes[value='2020-1-3']</div>
+    <cui-datepicker value="2020-1-3"></cui-datepicker>
+</div>
+<div style="margin: 10px 0px">
+    <div style="color: red">changeDate event</div>
+    <cui-datepicker (changeDate)="changeDate($event)"></cui-datepicker>
+</div>

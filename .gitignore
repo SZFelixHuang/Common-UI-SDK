@@ -1,0 +1,7 @@
+node_modules
+dist
+projects/common-ui/src/lib/**/*.css
+projects/common-ui/src/lib/**/*.js
+src/app/cui-dropdown-demo/**/*.css
+src/app/cui-dropdown-demo/**/*.js
+src/styles.css

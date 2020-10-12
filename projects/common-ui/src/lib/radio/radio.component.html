@@ -1,0 +1,7 @@
+<div #radio class="radio cui-radio">
+  <input #radioInput type="radio" id="{{id}}" name="{{name}}" value="{{value}}" (click) = "clickFn($event)">
+  <label for="{{id}}">
+    <ng-content></ng-content>
+    <ng-content select="bui-label"></ng-content>
+  </label>
+</div>

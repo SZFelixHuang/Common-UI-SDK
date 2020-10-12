@@ -1,0 +1,33 @@
+<div>
+    <div style="color: red">default</div>
+    <cui-phone></cui-phone>
+</div>
+<div>
+    <div style="color: red">name attribute</div>
+    <cui-phone name = 'myPhoneNuber'></cui-phone>
+</div>
+<div>
+    <div style="color: red">value attribute</div>
+    <cui-phone value = '+8613723407801'></cui-phone>
+</div>
+<div>
+    <div style="color: red">getPhoneNumber method</div>
+    <cui-phone value = '+8613723407801' #getPhoneNumber></cui-phone>
+    <button style="margin-left: 10px;" (click)="getPhoneNumberMethod($event)">invoke</button>
+</div>
+<div>
+    <div style="color: red">getPhoneNumber method</div>
+    <cui-phone value = '+8613723407801' #getSelectedCountry></cui-phone>
+    <button style="margin-left: 10px;" (click)="getSelectedCountryMethod($event)">invoke</button>
+</div>
+
+<div>
+    <div style="color: red">isValidNumber method</div>
+    <cui-phone value = '+8613723407801' #isValidNumber></cui-phone>
+    <button style="margin-left: 10px;" (click)="isValidNumberMethod($event)">invoke</button>
+</div>
+
+<div>
+    <div style="color: red">phoneChange event</div>
+    <cui-phone value = '+8613723407801' (phoneChange)="phoneChangeEvent($event)"></cui-phone>
+</div>

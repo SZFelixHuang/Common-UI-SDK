@@ -1,0 +1,21 @@
+div.cui-datetimepicker-range{
+    width: 420px;
+    display: inline-flex;
+    & > div.cui-datetimepicker{
+        width: 210px;
+
+        &:first-child{
+            & > input:last-child{
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+        }
+
+        &:not(:first-child){
+            & > span:first-child{
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+        }
+    }
+}

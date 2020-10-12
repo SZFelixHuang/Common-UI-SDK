@@ -1,0 +1,39 @@
+<div style="margin: 10px 0px">
+  <div style="color: red">Default</div>
+  <cui-select>
+    <cui-option>--select--</cui-option>
+    <cui-option value='0'>Apple</cui-option>
+    <cui-option value='1'>Pineapple</cui-option>
+    <cui-option value='2'>Watermelon</cui-option>
+    <cui-option value='3'>Mengo</cui-option>
+    <cui-option value='4'>Peach</cui-option>
+    <cui-option value='5'>Cherry</cui-option>
+    <cui-option value='6'>Grape</cui-option>
+  </cui-select>
+</div>
+<div style="margin: 10px 0px">
+  <div style="color: red">search attribute[search=true]</div>
+  <cui-select [search]= true>
+    <cui-option>--select--</cui-option>
+    <cui-option value='0'>Apple</cui-option>
+    <cui-option value='1'>Pineapple</cui-option>
+    <cui-option value='2'>Watermelon</cui-option>
+    <cui-option value='3'>Mengo</cui-option>
+    <cui-option value='4'>Peach</cui-option>
+    <cui-option value='5'>Cherry</cui-option>
+    <cui-option value='6'>Grape</cui-option>
+  </cui-select>
+</div>
+<div style="margin: 10px 0px">
+  <div style="color: red">selected event attribute</div>
+  <cui-select (selected)= "selected($event)">
+    <cui-option>--select--</cui-option>
+    <cui-option value='0'>Apple</cui-option>
+    <cui-option value='1'>Pineapple</cui-option>
+    <cui-option value='2'>Watermelon</cui-option>
+    <cui-option value='3'>Mengo</cui-option>
+    <cui-option value='4'>Peach</cui-option>
+    <cui-option value='5'>Cherry</cui-option>
+    <cui-option value='6'>Grape</cui-option>
+  </cui-select>
+</div>

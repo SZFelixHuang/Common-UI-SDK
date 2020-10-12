@@ -1,0 +1,55 @@
+<div>
+    <div style="color: red">Size attribute</div>
+    <span style="margin-right: 10px;">default size</span>
+    <cui-switch></cui-switch>
+    <span style="margin: 0px 10px;">mini size</span>
+    <cui-switch size = "mini"></cui-switch>
+    <span style="margin: 0px 10px;">small size</span>
+    <cui-switch size = "small"></cui-switch>
+    <span style="margin: 0px 10px;">large size</span>
+    <cui-switch size = "large"></cui-switch>
+</div>
+
+<div style="margin: 10px 0px">
+    <div style="color: red">Color attribute [
+        'info', 'success', 'warning', 'danger', 'default', 'primary'    
+    ]</div>
+    <span style="margin-right: 10px;">onColor</span>
+    <cui-switch onColor="info"></cui-switch>
+    <span style="margin: 0px 10px;">OffColor</span>
+    <cui-switch offColor = "primary"></cui-switch>
+    <span style="margin: 0px 10px;">onColor + OffColor</span>
+    <cui-switch onColor="success" offColor = "danger"></cui-switch>
+</div>
+
+<div style="margin: 10px 0px">
+    <div style="color: red">disabled/readonly attribute</div>
+    <span style="margin-right: 10px;">disabled = true</span>
+    <cui-switch [disabled]=true></cui-switch>
+    <span style="margin-right: 10px;">disabled = false</span>
+    <cui-switch [disabled]=false></cui-switch>
+    <span style="margin: 0px 10px;">readonly = true</span>
+    <cui-switch [readonly] = true></cui-switch>
+    <span style="margin: 0px 10px;">readonly = false</span>
+    <cui-switch [readonly] = false></cui-switch>
+</div>
+
+<div style="margin: 10px 0px">
+    <div style="color: red">state attribute</div>
+    <span style="margin-right: 10px;">state = true</span>
+    <cui-switch onColor="info" [state]=true></cui-switch>
+    <span style="margin: 0px 10px;">state = false</span>
+    <cui-switch onColor="info" [state]=false></cui-switch>
+</div>
+
+<div style="margin: 10px 0px">
+    <div style="color: red">onText/offText attribute</div>
+    <span style="margin-right: 10px;"></span>
+    <cui-switch onColor="info" onText="Male"  offText="Female"></cui-switch>
+</div>
+
+<div style="margin: 10px 0px">
+    <div style="color: red">switchChange event</div>
+    <span style="margin-right: 10px;"></span>
+    <cui-switch (switchChange) = "switchChange($event)"></cui-switch>
+</div>

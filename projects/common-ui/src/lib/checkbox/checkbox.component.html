@@ -1,0 +1,7 @@
+<div #checkbox class="checkbox cui-checkbox">
+  <input #checkboxInput type="checkbox" id="{{id}}" name="{{name}}" value="{{value}}" (click) = "clickFn($event)">
+  <label for="{{id}}">
+    <ng-content></ng-content>
+    <ng-content select="bui-label"></ng-content>
+  </label>
+</div>

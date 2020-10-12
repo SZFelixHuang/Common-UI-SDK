@@ -1,0 +1,10 @@
+<div class="cui-dropdown">
+    <button #cuiDropdownBtn type="button" class="btn cui-dropdown-btn">
+        <span class="{{btnIcon}}"></span>
+        {{displayText}}
+        <ng-content select="bui-label"></ng-content>
+    </button>
+    <div #cuiDropdownItems class="tooltip_templates">
+        <ng-content></ng-content>
+    </div>
+</div>

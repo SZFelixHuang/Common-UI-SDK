@@ -1,0 +1,17 @@
+<div #toolbar id="bootstrap-table-toolbar">
+  <select class="form-control">
+    <option value="">Export Basic</option>
+    <option value="selected">Export Selected</option>
+    <option value="all">Export All</option>
+  </select>
+</div>
+<table #cuiTable>
+  <thead>
+    <tr>
+      <ng-content select="cui-table-header"></ng-content>
+    </tr>
+  </thead>
+  <tbody>
+     <ng-content select="cui-table-row"></ng-content>
+  </tbody>
+</table>

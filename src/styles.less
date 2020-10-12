@@ -1,0 +1,85 @@
+html, body{
+    height: 100%;
+}
+.tooltipster-sidetip.cui-customized .tooltipster-box {
+    background: blue;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.tooltipster-sidetip.cui-customized .tooltipster-content {
+	color: red;
+	padding: 8px;
+}
+
+.cui-table-component{
+    background-color: rgb(226, 226, 226);
+}
+.cui-table-header{
+    background-color: rgb(49, 163, 163);
+}
+.cui-table-buttons-color{
+    background-color: rgb(49, 163, 163) !important ;
+    border-color: rgb(49, 163, 163) !important;
+}
+ul.pagination{
+    li.page-item{
+        a.page-link{
+            color: rgb(49, 163, 163) !important;
+        }
+        &.active{
+            a.page-link{
+                background-color: rgb(49, 163, 163) !important ;
+                border-color: rgb(49, 163, 163) !important ;
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+
+div.cui-checkbox
+{
+    & > input[type="checkbox"]:checked + label::before{
+        background-color: #337ab7;
+        border-color: #337ab7;
+    }
+    & > input[type="checkbox"]:checked + label::after{
+        color: #fff; 
+    }
+} 
+
+div.cui-radio
+{
+    & > input[type="radio"]:checked + label::before{
+        border-color: #337ab7;
+    }
+    & > input[type="radio"]:checked + label::after{
+        background-color: #337ab7;
+    }
+} 
+
+.iti__flag {background-image: url("./assets/images/flags.png");}
+ 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("./assets/images/flags@2x.png");}
+}
+
+div.cui-phone{
+    width: 250px;
+    & > div.iti__flag-container{
+        & > div.iti__selected-flag {
+                background-color: #eee;
+                border-right: 1px solid #ccc;
+            }
+    }
+}
+
+div.cui-tabs{
+    div.cui-tab{
+        & > a:hover{
+            border-right-color: red;
+            color:red;
+        }
+    }
+}
